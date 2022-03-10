@@ -7,8 +7,11 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
     "plugin:import/recommended",
-    "airbnb"
+    "airbnb",
+    "prettier"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -17,12 +20,24 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks"],
+  "plugins": ["react", "react-hooks", "prettier", "jsx-a11y"],
   "rules": {
-    "quotes": [2, "single"],
+    "quote-props": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "off",
+    "prefer-template": "warn",
+    "template-curly-spacing": "error",
+    "no-console": 1,
+    "no-var": "error",
+    "no-const-assign": "off",
     "no-unused-vars": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "no-console": 0
+    "object-shorthand": "warn",
+    "jsx-a11y/anchor-is-valid": 1,
+    "jsx-a11y/alt-text": 2,
+    "jsx-a11y/img-redundant-alt": 2,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0
   }
 }
